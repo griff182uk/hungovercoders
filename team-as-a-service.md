@@ -37,7 +37,7 @@ The key take home from this is you want to scale out the delivery of code and va
 ## Starting a new team
 
 Creating a new team should not happen that often if you follow the ideas over [products over projects](https://martinfowler.com/articles/products-over-projects.html) and [domain driven design](https://martinfowler.com/bliki/DomainDrivenDesign.html) to map teams to business value areas. These areas are currently beyond the scope of this post but if you still follow project-based teams, the following process will likely cause you more pain as you too frequently spin up new teams with no ownership over the previous projects outputs.
-The services described below provided by a platform team are therefore for long-lived teams only. All they require is a team name, membership and remit, the steps below then are what the platform team should aim to provide as a priority in an automated fashion. The **{teamname}** provided should be consistent through all the services provided below.
+The services described below provided by a platform team are therefore for long-lived teams only. All they require is a team name, membership and remit. The steps below then are what the platform team should aim to provide as a priority in an automated fashion. The **{teamname}** provided should be consistent through all the services provided below.
 
 ## Communication as a Service (CaaS)
 
@@ -66,6 +66,7 @@ Repositories refers to bases where teams can store materials related to their wo
 
 An appropriate and independent work management tool should be provisioned for the team, such as an Azure Devops Team project. The team project being within the organization and being called {teamname}.
 Tools like this have the advantage of the team being able to create a Team Homepage from the wiki in the form of a Team API, that if described correctly can be a powerful search optimization tool. All the tickets being in the one tool also focuses any team members and focuses stakeholder and product owners to request work in the correct place.
+If the project level is not specific enough for the team, then the backlog in the work management tool at a minimum should contain the {teamname}.
 
 ### Knowledge
 
@@ -74,7 +75,6 @@ Teams should have immediate access to some wiki tool and likely a document store
 ### Code
 
 A codebase that the {teamname} has access to should be provided. This may be the team being granted to create and contribute to git repos in an Azure Devops wiki, or being provided access to create contribute to git repos in github. Either way a team requires to store code and reference it from deployment as soon as possible in order to deliver value.
-
 
 ## Environment as a Service (EaaS)
 
